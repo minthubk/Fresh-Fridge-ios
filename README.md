@@ -48,6 +48,8 @@ We would love any help you can give us on the application. There are always ways
   - Test out the app or take a look at ways the code can be improved. Then, report  suggestions or bugs on the issue page.
 - Feature Ideas:
   - Let us know what we can do to improve are application, or if you have an idea you  would like to improve upon, then fork our repository, create a branch, and create a pull  request  with your changes
+- Android Developer?
+  - Please considering contributing to the [Android version](https://github.com/coron108/Fresh-Fridge)!
 
 #Step-by-Step Setup
 1. Fork the Fresh Fridge repo
