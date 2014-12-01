@@ -32,6 +32,7 @@ foods
   - Website: http://freshfridgeoss.wix.com/fresh-fridge
   - Facebook: https://www.facebook.com/freshfridgeOSS
   - Twitter: https://twitter.com/FreshFridgeOSS
+- [Wireframe](./images/iOSWireFrame.png)
   
 #Ways You Can Contribute (iOS)
 We would love any help you can give us on the application. There are always ways you can contribute!
