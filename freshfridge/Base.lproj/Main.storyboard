@@ -1,26 +1,165 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="dcE-uJ-z3v">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <!--Tab Bar Controller-->
+        <scene sceneID="IFu-vB-o7B">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="freshfridge" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <tabBarController id="dcE-uJ-z3v" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="M1k-9I-Yyc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="vx4-Wn-EXE" kind="relationship" relationship="viewControllers" id="udY-Jq-mLC"/>
+                        <segue destination="NlY-nZ-Zlq" kind="relationship" relationship="viewControllers" id="8pr-lp-5h5"/>
+                        <segue destination="AIp-FS-ZJt" kind="relationship" relationship="viewControllers" id="nE6-Tj-Qx1"/>
+                        <segue destination="VKQ-kY-ymu" kind="relationship" relationship="viewControllers" id="DnR-Ru-yk2"/>
+                        <segue destination="c47-gm-psf" kind="relationship" relationship="viewControllers" id="x3s-Rk-dja"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8q5-eu-icJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="149.33333333333334" y="295.36000000000001"/>
+            <point key="canvasLocation" x="-1030" y="498"/>
+        </scene>
+        <!--Fridge-->
+        <scene sceneID="Obo-TU-MPo">
+            <objects>
+                <tableViewController id="vx4-Wn-EXE" customClass="FridgeTableViewController" customModule="freshfridge" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="1lX-4Q-ANF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="x1B-F5-Rrr">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="x1B-F5-Rrr" id="fIn-Wl-rDw">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="vx4-Wn-EXE" id="DEY-qb-fVx"/>
+                            <outlet property="delegate" destination="vx4-Wn-EXE" id="J59-aY-nSI"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Fridge" id="lfU-wP-QX7"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n09-74-FBO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="169" y="-953"/>
+        </scene>
+        <!--List-->
+        <scene sceneID="XeS-rX-PdB">
+            <objects>
+                <tableViewController id="NlY-nZ-Zlq" customClass="ListTableViewController" customModule="freshfridge" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Jzf-UV-moj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Z88-kq-beU">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Z88-kq-beU" id="YEm-BU-1Y8">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="NlY-nZ-Zlq" id="6bg-fW-EqA"/>
+                            <outlet property="delegate" destination="NlY-nZ-Zlq" id="jE0-VO-n5b"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="List" id="4jh-bR-UuN"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bpH-WK-zEY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="169" y="-321"/>
+        </scene>
+        <!--Exp Dates-->
+        <scene sceneID="8Ui-mV-YdR">
+            <objects>
+                <tableViewController id="AIp-FS-ZJt" customClass="ExpirationTableViewController" customModule="freshfridge" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="MhU-kG-SAK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Cgo-B4-dvg">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Cgo-B4-dvg" id="uOZ-AG-JRE">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="AIp-FS-ZJt" id="DMO-nF-uxM"/>
+                            <outlet property="delegate" destination="AIp-FS-ZJt" id="nhu-9Q-vBV"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Exp Dates" id="S40-G2-dsq"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="INr-u8-QFl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="169" y="305"/>
+        </scene>
+        <!--Recipes-->
+        <scene sceneID="ADU-lZ-j8G">
+            <objects>
+                <tableViewController id="VKQ-kY-ymu" customClass="RecipesTableViewController" customModule="freshfridge" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="zpb-4z-FDu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="C5O-I4-QRJ">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="C5O-I4-QRJ" id="gLW-bz-0M7">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="VKQ-kY-ymu" id="2Em-WX-cVK"/>
+                            <outlet property="delegate" destination="VKQ-kY-ymu" id="ayv-6e-xWn"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Recipes" id="BJ2-Fd-7vQ"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s5T-vG-b6j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="169" y="939"/>
+        </scene>
+        <!--Tips-->
+        <scene sceneID="ILs-hh-td5">
+            <objects>
+                <tableViewController id="c47-gm-psf" customClass="TipsTableViewController" customModule="freshfridge" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Iuo-cw-saX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="fEz-rA-KX1">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fEz-rA-KX1" id="UY8-uk-wDJ">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="c47-gm-psf" id="eWx-vk-wCr"/>
+                            <outlet property="delegate" destination="c47-gm-psf" id="Wuk-6a-fHV"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Tips" id="TIS-9g-yLq"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Egk-Pl-QwR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="169" y="1575"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

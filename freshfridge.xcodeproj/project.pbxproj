@@ -9,11 +9,15 @@
 /* Begin PBXBuildFile section */
 		EA24E48B1A18BCEC00AADA0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA24E48A1A18BCEC00AADA0C /* AppDelegate.swift */; };
 		EA24E48E1A18BCEC00AADA0C /* freshfridge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EA24E48C1A18BCEC00AADA0C /* freshfridge.xcdatamodeld */; };
-		EA24E4901A18BCEC00AADA0C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA24E48F1A18BCEC00AADA0C /* ViewController.swift */; };
 		EA24E4931A18BCEC00AADA0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA24E4911A18BCEC00AADA0C /* Main.storyboard */; };
 		EA24E4951A18BCEC00AADA0C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA24E4941A18BCEC00AADA0C /* Images.xcassets */; };
 		EA24E4981A18BCEC00AADA0C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA24E4961A18BCEC00AADA0C /* LaunchScreen.xib */; };
 		EA24E4A41A18BCED00AADA0C /* freshfridgeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA24E4A31A18BCED00AADA0C /* freshfridgeTests.swift */; };
+		EAD2C51B1A2C2800006DBBDB /* FridgeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD2C51A1A2C2800006DBBDB /* FridgeTableViewController.swift */; };
+		EAD2C5221A2C2859006DBBDB /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD2C5211A2C2859006DBBDB /* ListTableViewController.swift */; };
+		EAD2C5241A2C2868006DBBDB /* ExpirationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD2C5231A2C2868006DBBDB /* ExpirationTableViewController.swift */; };
+		EAD2C5271A2C287E006DBBDB /* RecipesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD2C5261A2C287E006DBBDB /* RecipesTableViewController.swift */; };
+		EAD2C5291A2C2887006DBBDB /* TipsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD2C5281A2C2887006DBBDB /* TipsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,13 +35,17 @@
 		EA24E4891A18BCEC00AADA0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA24E48A1A18BCEC00AADA0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA24E48D1A18BCEC00AADA0C /* freshfridge.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = freshfridge.xcdatamodel; sourceTree = "<group>"; };
-		EA24E48F1A18BCEC00AADA0C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EA24E4921A18BCEC00AADA0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EA24E4941A18BCEC00AADA0C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		EA24E4971A18BCEC00AADA0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		EA24E49D1A18BCEC00AADA0C /* freshfridgeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = freshfridgeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA24E4A21A18BCED00AADA0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA24E4A31A18BCED00AADA0C /* freshfridgeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = freshfridgeTests.swift; sourceTree = "<group>"; };
+		EAD2C51A1A2C2800006DBBDB /* FridgeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FridgeTableViewController.swift; sourceTree = "<group>"; };
+		EAD2C5211A2C2859006DBBDB /* ListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
+		EAD2C5231A2C2868006DBBDB /* ExpirationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpirationTableViewController.swift; sourceTree = "<group>"; };
+		EAD2C5261A2C287E006DBBDB /* RecipesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipesTableViewController.swift; sourceTree = "<group>"; };
+		EAD2C5281A2C2887006DBBDB /* TipsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,8 +87,12 @@
 		EA24E4871A18BCEC00AADA0C /* freshfridge */ = {
 			isa = PBXGroup;
 			children = (
+				EAD2C5201A2C2822006DBBDB /* Tips */,
+				EAD2C51F1A2C281A006DBBDB /* Recipes */,
+				EAD2C51E1A2C2814006DBBDB /* Exp Date */,
+				EAD2C51D1A2C280D006DBBDB /* List */,
+				EAD2C51C1A2C2806006DBBDB /* Fridge */,
 				EA24E48A1A18BCEC00AADA0C /* AppDelegate.swift */,
-				EA24E48F1A18BCEC00AADA0C /* ViewController.swift */,
 				EA24E4911A18BCEC00AADA0C /* Main.storyboard */,
 				EA24E4941A18BCEC00AADA0C /* Images.xcassets */,
 				EA24E4961A18BCEC00AADA0C /* LaunchScreen.xib */,
@@ -113,6 +125,46 @@
 				EA24E4A21A18BCED00AADA0C /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EAD2C51C1A2C2806006DBBDB /* Fridge */ = {
+			isa = PBXGroup;
+			children = (
+				EAD2C51A1A2C2800006DBBDB /* FridgeTableViewController.swift */,
+			);
+			name = Fridge;
+			sourceTree = "<group>";
+		};
+		EAD2C51D1A2C280D006DBBDB /* List */ = {
+			isa = PBXGroup;
+			children = (
+				EAD2C5211A2C2859006DBBDB /* ListTableViewController.swift */,
+			);
+			name = List;
+			sourceTree = "<group>";
+		};
+		EAD2C51E1A2C2814006DBBDB /* Exp Date */ = {
+			isa = PBXGroup;
+			children = (
+				EAD2C5231A2C2868006DBBDB /* ExpirationTableViewController.swift */,
+			);
+			name = "Exp Date";
+			sourceTree = "<group>";
+		};
+		EAD2C51F1A2C281A006DBBDB /* Recipes */ = {
+			isa = PBXGroup;
+			children = (
+				EAD2C5261A2C287E006DBBDB /* RecipesTableViewController.swift */,
+			);
+			name = Recipes;
+			sourceTree = "<group>";
+		};
+		EAD2C5201A2C2822006DBBDB /* Tips */ = {
+			isa = PBXGroup;
+			children = (
+				EAD2C5281A2C2887006DBBDB /* TipsTableViewController.swift */,
+			);
+			name = Tips;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,9 +267,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA24E4901A18BCEC00AADA0C /* ViewController.swift in Sources */,
+				EAD2C5271A2C287E006DBBDB /* RecipesTableViewController.swift in Sources */,
 				EA24E48B1A18BCEC00AADA0C /* AppDelegate.swift in Sources */,
+				EAD2C5241A2C2868006DBBDB /* ExpirationTableViewController.swift in Sources */,
+				EAD2C51B1A2C2800006DBBDB /* FridgeTableViewController.swift in Sources */,
+				EAD2C5221A2C2859006DBBDB /* ListTableViewController.swift in Sources */,
 				EA24E48E1A18BCEC00AADA0C /* freshfridge.xcdatamodeld in Sources */,
+				EAD2C5291A2C2887006DBBDB /* TipsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +396,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = freshfridge/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -351,6 +408,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = freshfridge/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -411,6 +469,7 @@
 				EA24E4A91A18BCED00AADA0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EA24E4AA1A18BCED00AADA0C /* Build configuration list for PBXNativeTarget "freshfridgeTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +478,7 @@
 				EA24E4AC1A18BCED00AADA0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
