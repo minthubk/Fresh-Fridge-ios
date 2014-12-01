@@ -22,6 +22,9 @@ foods
 - Synchronization of list between multiple phones within a household 
 
 ##iOS Requirements
+- Xcode 6 or above
+- Develop for iOS 8 (thinking about iOS 7 compatability)
+- CocoaPods
 
 #Development Status
 - Version 0.1 (beta) 
